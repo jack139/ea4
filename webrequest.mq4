@@ -29,7 +29,7 @@ int check_license() {
 	int res;
 
 	// read license file
-	int filehandle=FileOpen(lic_file,FILE_READ|FILE_TXT);
+	int filehandle=FileOpen(lic_file,FILE_SHARE_READ|FILE_TXT);
 	if(filehandle==INVALID_HANDLE){
 		// read license error， exit program
 		Print("Error in open license file. Error code=",GetLastError());

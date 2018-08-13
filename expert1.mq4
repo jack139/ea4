@@ -323,7 +323,7 @@ int check_license() {
 	//--- Reset the last error code
 	ResetLastError();
 	// ready to send request
-	int timeout=5000; //--- Timeout below 1000 (1 sec.) is not enough for slow Internet connection
+	int timeout=15000; //--- Timeout below 1000 (1 sec.) is not enough for slow Internet connection
 	ArrayResize(post,StringToCharArray(post_str,post,0,WHOLE_ARRAY,CP_UTF8)-1);
 	res=WebRequest("POST",post_url,cookie,NULL,timeout,post,0,result,headers);
 	//--- Checking errors

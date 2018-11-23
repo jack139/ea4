@@ -7,8 +7,8 @@
 extern string Pair = "GBP-USD-TimeFrame_M15";
 extern int magic = 7749;
 extern double start_lot = 0.1;
-extern double tp_in_money = 5.0;
-extern double range = 25.0;
+extern double tp_in_money = 8.0; //5.0;
+extern double range = 20.0; //25.0;
 extern int level = 10;
 extern bool lot_multiplier = TRUE;
 extern double multiplier = 0.0;  // online data
